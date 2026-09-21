@@ -1,0 +1,20 @@
+ {
+  "manifest_version": 3,
+  "name": "Komik Trans",
+  "version": "1.0",
+  "description": "Ekstensi untuk menerjemahkan halaman komik.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Buka Komik Trans"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
